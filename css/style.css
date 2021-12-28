@@ -604,7 +604,7 @@
 }
 
 .feature-card {
-  border-radius: 5px;
+  border-radius: 40px;
   border: 1px solid #d9e4e6;
   background-color: #ffffff;
   padding: 35px;
@@ -1481,7 +1481,11 @@
   margin-top: 50px;
 }
 
-.article {
+.article-section h2.center {
+  text-align: center;
+}
+
+.articleCustom, .article {
   margin-top: 30px;
 }
 
@@ -1492,6 +1496,10 @@
 .article h4 {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.articleCustom.center {
+  text-align: center;
 }
 
 
@@ -1654,6 +1662,7 @@
 .fulllogo {
   height: auto;
   width: 50%;
+  max-width: 150px;
 }
 
 .footer-newsletter-form .form-group input::-webkit-input-placeholder {
@@ -1816,4 +1825,207 @@
   height: auto;
   width: 70%;
   margin-bottom: 30px;
+}
+
+/* form section */
+.form-header h2 {
+  text-align: center;
+}
+
+.form-section {
+  margin-top: 25px;
+}
+
+.form-section .form-group input {
+  height: 40px;
+  color: #666666;
+  border-radius: 5px;
+  background: rgba(18, 144, 164, 0.07);
+  padding-left: 17px;
+  border: 2px solid rgba(20, 178, 202, 0.479);
+}
+
+.form-section .form-group input:focus {
+  background: rgba(13, 121, 85, 0.096);
+  border: 2px solid rgba(20, 202, 132, 0.699);
+}
+
+.form-section .form-group label {
+  color: #666666;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.43px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.form-check {
+  margin-top:20px;
+}
+
+.form-section .form-check label {
+  padding-top: 5px;
+}
+
+.form-section .form-group button {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -1.12px;
+  border-radius: 3px;
+  background-color: #1290a4;
+  width: 100%;
+  margin-top: 10px;
+  height: 50px;
+  font-size: 17px;
+}
+
+/* Stepper */
+.wizard .nav-tabs {
+  position: relative;
+  margin-bottom: 0;
+  border-bottom-color: transparent;
+}
+
+.wizard > div.wizard-inner {
+position: relative;
+margin-top: 25px;
+text-align: center;
+}
+
+.connecting-line {
+height: 2px;
+background: #e0e0e0;
+position: absolute;
+width: 75%;
+margin: 0 auto;
+left: 0;
+right: 0;
+top: 15px;
+z-index: 1;
+margin-top:20px;
+}
+
+.wizard .nav-tabs > li.active > button, .wizard .nav-tabs > li.active > button:hover, .wizard .nav-tabs > li.active > button:focus {
+color: #555555;
+cursor: default;
+border: 0;
+border-bottom-color: transparent;
+}
+
+span.round-tab {
+width: 30px;
+height: 30px;
+line-height: 30px;
+display: inline-block;
+border-radius: 50%;
+background: #fff;
+z-index: 2;
+position: absolute;
+left: 0;
+text-align: center;
+font-size: 16px;
+color: #0e214b;
+font-weight: 500;
+border: 1px solid #ddd;
+margin-top: -12px;
+}
+span.round-tab i{
+color:#555555;
+}
+.wizard li.active span.round-tab {
+  background: #0db02b;
+color: #fff;
+border-color: #0db02b;
+}
+.wizard li.active span.round-tab i{
+color: #5bc0de;
+}
+.wizard .nav-tabs > li.active > button i{
+color: #0db02b;
+}
+
+.wizard .nav-tabs > li {
+width: 25%;
+}
+
+.wizard li:after {
+content: " ";
+position: absolute;
+left: 46%;
+opacity: 0;
+margin: 0 auto;
+bottom: 0px;
+border: 5px solid transparent;
+border-bottom-color: red;
+transition: 0.1s ease-in-out;
+}
+
+.wizard .nav-tabs > li button {
+width: 30px;
+height: 30px;
+margin: 20px auto;
+border-radius: 100%;
+padding: 0;
+background-color: transparent;
+position: relative;
+top: 0;
+}
+.wizard .nav-tabs > li button i{
+position: absolute;
+top: -15px;
+font-style: normal;
+font-weight: 400;
+white-space: nowrap;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 12px;
+font-weight: 700;
+color: #000;
+}
+
+.wizard .nav-tabs > li button:hover {
+  background: transparent;
+}
+
+.required {
+  color: red;
+}
+
+.plan-items li {
+  font-size: 14px!important;
+}
+
+@media (min-width: 992px) {
+.plan-items li {
+    font-size: 21px;
+    line-height: 36px;
+}
+}
+
+@media (min-width: 768px) {
+.plan-items li {
+  font-size: 20px;
+  line-height: 34px;
+}
+}
+
+@media (min-width: 576px) {
+.plan-items li {
+    font-size: 17px;
+    line-height: 24px;
+}
+}
+
+.pricing-card {
+  background-color: #f9f9f8;
+  border-color: #4ca746;
+  border-radius: 50px;
+}
+.pricing-footer {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.pricing-footer a {
+  color: #0d41e9;
 }
