@@ -533,6 +533,8 @@
       -ms-flex-align: center;
           align-items: center;
   height: auto;
+  position: relative;
+  padding-bottom: 57%;
 }
 
 .hero-image img {
@@ -2027,4 +2029,15 @@ color: #000;
 
 .pricing-footer a {
   color: #0d41e9;
+}
+
+iframe.youtube {
+  margin:20px;
+  width: 100%;
+  height:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid #3b92a5;
+  margin-left: -5px;
 }
